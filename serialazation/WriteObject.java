@@ -9,7 +9,7 @@ public class WriteObject {
         UserInfo user1 = new UserInfo("tonka", 123);
         UserInfo user2 = new UserInfo("roman", 456);
         try {
-            FileOutputStream fos = new FileOutputStream("usersInfo.bin");
+            FileOutputStream fos = new FileOutputStream("usersInfo");
             ObjectOutputStream oos = new ObjectOutputStream(fos);
             oos.writeObject(user1);
             oos.writeObject(user2);

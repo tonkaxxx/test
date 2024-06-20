@@ -1,6 +1,8 @@
 package serialazation;
 
-public class UserInfo {
+import java.io.Serializable;
+
+public class UserInfo implements Serializable {
     String username;
     public String getUsername() {
         return username;
@@ -13,8 +15,8 @@ public class UserInfo {
         this.username = username;
         this.password = password;
     }
-    public String getInfo(){
-        return username+" , "+password;
+    public void getInfo(){
+        System.out.println( username+" , "+password);
     }
 }
 
