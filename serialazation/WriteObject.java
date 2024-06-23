@@ -10,10 +10,11 @@ public class WriteObject {
         UserInfo user2 = new UserInfo("roman", 456);
         try {
             FileOutputStream fos = new FileOutputStream("usersInfo.bin");
-            ObjectOutputStream oos = new ObjectOutputStream(fos);
-            oos.writeObject(user1);
-            oos.writeObject(user2);
-            oos.close();
+            try (ObjectOutputStream oos = new ObjectOutputStream(fos)) {
+                oos.writeObject(user1);
+                oos.writeObject(user2);
+                oos.close();
+            }
         } catch (IOException e) {
             System.out.println("no such file in directory");
         }

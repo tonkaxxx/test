@@ -1,5 +1,7 @@
 package lesson37;
 
+
+
 import java.io.IOException;
 import java.util.Scanner;
 
@@ -18,7 +20,6 @@ public class exceptions {
             } else {System.out.println(userint);}
             }
         } catch (NumberFormatException e) {
-            e.printStackTrace();
         }
     }
 }

@@ -7,8 +7,8 @@ import java.io.PrintWriter;
 public class writeToFile {
     public static void main(String[] args) throws FileNotFoundException {
         File file = new File("test");
-        PrintWriter prwr = new PrintWriter(file);
-        prwr.println("12312312312r2rf");
-        prwr.close();
+        try (PrintWriter prwr = new PrintWriter(file)) {
+            prwr.println("12312312312r2rf");
+        }
     }
 }

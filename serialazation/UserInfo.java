@@ -1,6 +1,8 @@
 package serialazation;
 
-public class UserInfo {
+import java.io.Serializable;
+
+public class UserInfo implements Serializable{
     String username;
     public String getUsername() {
         return username;
