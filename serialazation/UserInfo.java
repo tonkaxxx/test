@@ -3,20 +3,18 @@ package serialazation;
 import java.io.Serializable;
 
 public class UserInfo implements Serializable {
-    String username;
-    public String getUsername() {
-        return username;
+    // Define the fields and methods of the UserInfo class
+    // For example:
+    private String name;
+    private int age;
+
+    public UserInfo(String name, int age) {
+        this.name = name;
+        this.age = age;
     }
-    int password; 
-    public int getPassword() {
-        return password;
-    }
-    public UserInfo (String username, int password){
-        this.username = username;
-        this.password = password;
-    }
-    public void getInfo(){
-        System.out.println( username+" , "+password);
+
+    public void getInfo() {
+        System.out.println("Name: " + name + ", Age: " + age);
     }
 }
 
