@@ -10,5 +10,5 @@ class lox {
         this.a = a;
         this.asfasf = asfasf;
     }
-    
+
 }
