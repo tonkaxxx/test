@@ -15,8 +15,8 @@ public class UserInfo implements Serializable{
         this.username = username;
         this.password = password;
     }
-    public String getInfo(){
-        return username+" , "+password;
+    public void getInfo(){
+        System.out.println( username+" , "+password);
     }
 }
 
