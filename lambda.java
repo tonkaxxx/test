@@ -3,7 +3,7 @@ public class lambda {
         System.out.println(interfaseclass.abc("halo"));
     }
     public static void main(String[] args) {
-        showlength((String ydtd) -> {return ydtd.length();});
+        showlength(e -> e.length());
     }
 }
 interface SomeInterfase {
