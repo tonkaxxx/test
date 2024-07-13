@@ -5,7 +5,7 @@ import java.util.ListIterator;
 
 public class isPalindrome{
     public static void main(String[] args) {
-        String s = "asdvba";
+        String s = "oio";
         List<Character> list = new LinkedList<>();
         for (char ch: s.toCharArray()){
             list.add(ch);
